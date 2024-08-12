@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>zoologico de chapultepc</title>
+<link rel="stylesheet" href="banner.css">
+</head>
+<body>
+<div class="banner">
+<div class="banner-content">
+<h1>zoologico chapultepec</h1>
+
+
+</div>
+</div>
+<div class="fashion-model">
+<img id="fashion-image" src="fotos/z1.jpg" alt="zoologico" class="fade-in">
+</div>
+<div class="info">
+            <h1>historia de zologico de chapultepec </h1>
+            <p>
+                
+1923 
+Con antecedentes en 1899 a partir de un decreto de Porfirio Díaz, Alfonso Luis Herrera pone la primera piedra del zoológico actual en 6 de julio en el Bosque de Chapultepec y se inaugura en noviembre del año siguiente
+
+En 1923 Alfonso Luis Herrera informó que se construiría un parque zoológico en terrenos de Chapultepec (1.4 ha) donados por la Secretaría de Comunicaciones y Obras Públicas. Esto sucedía durante la presidencia de Álvaro Obregón (1920-1924) época de reconstrucción de instituciones como la Secretaría de Educación Pública (1921) y el impulso de las artes plásticas de artistas como Diego Rivera, José Clemente Orozco y David Alfaro Siqueiros. Alfonso Herrera, junto con Aurelio del Río, Marcos E. Becerra y José A. Durán a través de la Dirección de Estudios Biológicos impulsaron esta iniciativa.
+
+En 1945, durante el gobierno de Manuel Ávila Camacho, el zoológico fue nombrado "Alfonso L. Herrera". Durante la década de los 50´s el zoológico tuvo un resurgimiento con el regente de la ciudad, el sonorense Ernesto Uruchurtu Peralta (1906-1997), quien abarcó tres periodos presidenciales. El zoológico adquirió nuevos animales para su colección y al mismo tiempo adquirió a una de las personas que más influenció el zoológico de Chapultepec y muchos otros de México: el suizo Jean F. Schoch Beachler (1928-2012), mejor conocido como "Johnny". Johnny inició su trabajo en el Zoológico de Chapultepec en 1952 y lo continuó por más de 50 años hasta 2009 cuando falleció. Durante los años 70s fue director de los tres zoológicos de esa época: Chapultepec, San Juan de Aragón y del Parque Peña Pobre.
+            </p>
+<script>
+const images = ['fotos/z1.jpg', 'fotos/z2.webp', 'fotos/z3.webp', 'fotos/z4.webp', 'fotos/z5.webp'];
+let currentIndex = 0;
+function changeImage() {
+const img = document.getElementById('fashion-image');
+img.classList.remove('fade-in');
+img.classList.add('fade-out');
+setTimeout(() => {
+currentIndex = (currentIndex + 1) % images.length;
+img.src = images[currentIndex];
+img.classList.remove('fade-out');
+img.classList.add('fade-in');
+}, 1100);
+}
+setInterval(changeImage, 7000);
+</script>
+</body>
+</html>

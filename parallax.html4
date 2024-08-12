@@ -1,0 +1,118 @@
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;es&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;title&gt;Parallax con js&lt;/title&gt;
+&lt;link rel=&quot;stylesheet&quot;
+href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css&quot;&gt;
+&lt;style&gt;
+.parallax {
+
+background-image:
+url(&#39;data:image/jpeg;base64,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
+ERW5iIiAiIg//9k=&#39;);
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+min-height: 400px;
+
+position: relative;
+}
+
+.titulo {
+
+text-align: center;
+margin-top: 100px;
+}
+
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div&gt; GATITO&lt;/div&gt;
+&lt;div&gt;
+Los gatos, esos felinos curiosos y elegantes, han convivido con los humanos desde tiempos
+antiguos. Originarios de Egipto, donde eran venerados como dioses, estos animales se han ganado
+un lugar en nuestros hogares y corazones. Con su independencia y agilidad, los gatos son
+admirados por su capacidad para cazar y por ser excelentes compañeros de vida. Hoy en día,
+millones de personas en todo el mundo disfrutan de la compañía y el cariño único que ofrecen
+estos pequeños felinos.
+&lt;/div&gt;
+
+&lt;section class=&quot;contenedor&quot;&gt;
+
+&lt;h1 class=&quot;titulo&quot;&gt;parallax&lt;/h1&gt;
+&lt;div class=&quot;parallax&quot;&gt;&lt;/div&gt;
+&lt;section class=&quot;contenedor&quot;&gt;
+&lt;h1 class=&quot;titulo&quot;&gt;Parallax&lt;/h1&gt;
+&lt;p class=&quot;historia&quot;&gt;
+Los gatos, esos felinos curiosos y elegantes, han convivido con los humanos desde tiempos
+antiguos. Originarios de Egipto, donde eran venerados como dioses, estos animales se han ganado
+un lugar en nuestros hogares y corazones. Con su independencia y agilidad, los gatos son
+admirados por su capacidad para cazar y por ser excelentes compañeros de vida. Hoy en día,
+
+millones de personas en todo el mundo disfrutan de la compañía y el cariño único que ofrecen
+estos pequeños felinos.
+&lt;/p&gt;
+&lt;script src=&quot;parallax.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;--alfonso perea limas --&gt;n

@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Typing</title>
+</head>
+<body>
+  <p id="nombre"></p>
+
+  <script>
+    function cambiarNombre() {
+      var nombre = document.getElementById("nombre");
+      var nombres = ["Andrés", "Manuel", "Téllez"];
+      var colores = ["blue", "green", "red"]; // Colores correspondientes a los nombres
+      var indice = 0;
+
+      function cambiar() {
+        nombre.textContent = nombres[indice];
+        nombre.style.color = colores[indice]; // Cambia el color del nombre
+        indice = (indice + 1) % nombres.length;
+      }
+
+      cambiar(); // Cambia el nombre inicialmente
+
+      setInterval(cambiar, 10000); // Cambia el nombre y el color cada 10 segundos
+    }
+
+    // Llamamos a la función para que se ejecute cuando la página cargue
+    window.onload = cambiarNombre;
+  </script>
+</body>
+</html>

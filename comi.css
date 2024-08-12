@@ -1,0 +1,26 @@
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+}
+.banner {
+
+background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('') no-repeat center center;
+
+background-size: cover;
+height: 200px;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+overflow: hidden;
+
+color: white;
+}
+.banner-content {
+text-align: center;
+animation: fadeIn 1s ease-in-out;
+}
+.banner-content h1 {
+font-size: 2em;
+margin: 0;
+animation: slideIn 1.5s ease-out

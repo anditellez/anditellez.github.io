@@ -1,0 +1,21 @@
+box-sizing: border-box;
+}
+body {
+margin: 0;
+padding: 20px;
+font-family: monospace;
+
+}
+.contenedor {
+position: relative;
+height: 400px;
+overflow: hidden;
+margin: 20px 0;
+}
+.parallax {
+position: absolute;
+width: 100%;
+background-image: url('https://imgs.search.brave.com/efI6O3uSyN9SMrmtFmp2c-iCQTbisDM2aNwp6cfx2jg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE2/MDE1ODUwODg2MjQt/MGE3NzBkYTJiZjIx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TVRSOGZH/TnBkV1JoWkNVeU1H/UmxKVEl3YlNWRE15/VkJPWGhwWTI5OFpX/NThNSHg4TUh4OGZE/QT0');
+background-size: cover;
+height: 100vh;
+{   
